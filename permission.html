@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Microphone Access Request</title>
+  <style>
+    body {
+      font-family: 'Roboto', 'Segoe UI', system-ui, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #FEF7FF; /* Материал-дизайн палитра */
+      color: #1D1B20;
+    }
+    .header {
+      display: flex;
+      justify-content: flex-end;
+      max-width: 420px;
+      margin: 0 auto 16px auto;
+    }
+    .lang-select {
+      border: 1px solid #79747E;
+      border-radius: 8px;
+      background-color: #FEF7FF;
+      color: #1D1B20;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 4px 8px;
+      outline: none;
+      cursor: pointer;
+    }
+    .card {
+      background: #FFFFFF;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      border: 1px solid #CAC4D0;
+      max-width: 420px;
+    }
+    h2 {
+      color: #1D1B20;
+      margin-top: 0;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    p {
+      color: #49454F;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .status-granted {
+      color: #4CAF50 !important;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <select id="langSelect" class="lang-select">
+      <option value="en">EN</option>
+      <option value="uk">UA</option>
+      <option value="ru">RU</option>
+    </select>
+  </div>
+  <div class="card">
+    <h2 data-i18n="title">Microphone Access</h2>
+    <p id="info" data-i18n="info">Please allow access to your microphone in the browser popup window at the top of the page.</p>
+  </div>
+  <script src="permission.js"></script>
+</body>
+</html>
