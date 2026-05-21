@@ -2,8 +2,6 @@
 
 An open-source Google Chrome extension designed to record the audio of the active browser tab (e.g., Google Meet, YouTube) and/or your microphone isolated from other applications, and save the result locally.
 
-This project is licensed under the GPL-3.0 License.
-
 ## Features
 
 - **Isolated Tab Capture**: Records audio originating only from the active browser tab. Background apps, system sounds, and other tabs are excluded.
